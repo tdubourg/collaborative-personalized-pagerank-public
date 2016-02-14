@@ -1,0 +1,8 @@
+http.max_content_length: 500mb
+index.store.compress.stored: true
+index.store.compress.tv: true
+index.cache.field.max_size: 50000
+index.cache.field.expire: 10m
+path:
+       logs: /data/log
+       data: /data/data

@@ -1,0 +1,4 @@
+{
+  "asi": true, // Suppresses the warnings about missing semicolons
+  "node": true
+}

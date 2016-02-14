@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>CPPR Search Evaluation</title>
+{{{conditional_css}}}
+<link rel="stylesheet" type="text/css" href="/stylesheets/colorbox.css">
+<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+<script type="text/javascript" src='/js/jquery.js'></script>
+<script type="text/javascript" src='/js/jcarousellite.min.js'></script>
+<script type="text/javascript" src='/js/jquery.colorbox.min.js'></script>
+<script type="text/javascript" src='/js/index_view.js'></script>
+</head>
+<body>
+	<div id='top'></div>
+	{{#user_study}}
+	{{>confirm_help_buttons}}
+	{{/user_study}}
+	<div class='text_size'>
+		Text: 
+		<a href="#" title="Decrease text size" class='dec_ts'><small>A</small></a>
+		 | 
+		<a href="#" title="Increase text size" class='inc_ts'><big>A</big></a>
+	</div>
+	<h1>CPPR Search Evaluation</h1>
+
+	{{>thank_message}}
+
+	{{{content_page}}}
+
+	<br class='clear-all' />
+	{{>ganalytics}}
+</body>
+</html>

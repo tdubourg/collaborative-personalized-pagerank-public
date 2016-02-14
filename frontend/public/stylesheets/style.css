@@ -1,0 +1,340 @@
+body {
+  padding: 50px;
+  padding-top: 0.2em;
+  padding-bottom: 0.1em;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  font: 0.9em "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #1a0dab;
+}
+
+h1 {
+	text-align: center;
+	margin: auto;
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+	border: 1px solid black;
+	width: 15em;
+}
+
+.clear-all {
+	clear: both;
+}
+
+.left-col, .right-col {
+	box-sizing: border-box;
+	width: 50%;
+	float: left;
+	list-style: none;
+	padding-left: 0;
+	border: 1px solid black;
+	padding: 2%;
+}
+
+.left-col {
+	margin-top: 0;
+	border-right: none;
+}
+
+.right-col {
+	margin-top: 0;
+	border-left: 1px solid black;
+	margin-left: 0;
+}
+
+.serp .result .title {
+	font-size: 1.1em;
+	font-weight: bold;
+	text-decoration: none;
+	color: #1a0dab;
+	/*display: block;*/
+}
+
+.serp .result {
+	/*opacity: 0.7;*/
+	display: block;
+	margin-top: 0.10em;
+	padding: 0.7em;
+	background-color: white;
+	height:3.8em;
+}
+
+.serp .result:hover {
+	opacity: 1;
+	background-color: #e3e3e3;
+}
+
+.serp .result .snippet {
+	display: block;
+	text-align: justify;
+	overflow: hidden;
+	font-size: 0.8em;
+	height:;
+}
+
+.url-title {
+	font-size: 1.0em;
+	color: green;
+	/*display: block;*/
+	text-decoration: none;
+}
+
+.relevant, .serp .relevant, .serp .relevant:hover {
+	background-color: #c1ffb0;
+}
+
+.serp.relevant {
+	background-color: #6cb558;
+}
+
+.help_btn:hover {
+	opacity: 1.0;
+}
+
+.help_btn {
+	position: fixed;
+	top: 1%;
+	left: 1%;
+	opacity: 0.5;
+	z-index: 100;
+}
+
+a.help_btn {
+	background-color: #e74c3c;
+	opacity: 1.0;
+	display: block;
+	position: fixed;
+	top: 47%;
+	left: -1.1em;
+	/*width: 10em;*/
+	height: 1.2em;
+	padding: 0.5em;
+	padding-bottom: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+	line-height: 1.6em;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	font-size: 1.4em;
+	border-radius: 10px;
+	transform:rotate(90deg);
+	-webkit-transform:rotate(90deg);
+}
+
+img.help_btn {
+	width: 70px;
+	height: 100px;
+}
+
+.text_size {
+	width: 5em;
+	margin: auto;
+	font-size: 1.2em;
+}
+
+.text_size a {
+	text-decoration: none;
+}
+
+.inline-block-centerer {
+	text-align:center
+}
+
+.thank_message {
+	display: inline-block;
+	max-width: 30em;
+	font-style: italic;
+	padding: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	text-align: center;
+	margin: auto;
+	margin-top: 1em;
+	border-radius: 5px;
+	background-color: #ffdce2;
+}
+
+.context {
+	margin: auto;
+	margin-top: 1em;
+	width: 80%;
+	border-radius: 5px;
+	background-color: #e3e6ed;
+	padding: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.context h3 {
+	margin:auto;
+	text-align: center;
+}
+
+.context ol.toplist, .context ul.toplist {
+	display: inline-block;
+	text-align: left;
+	margin: auto;
+	font-size: 1.2em;
+}
+
+.toplist.queries {
+	font-weight: bold;
+}
+
+.context p {
+	margin: 0.1em;
+	text-align: justify;
+}
+
+.context p em {
+	color:green;
+}
+
+.context p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+p.recall-explanations {
+	margin-top: 30px;
+}
+
+.context p .lookatme {
+	color:red;
+	font-weight: bold;
+}
+
+.context p.heavier {
+	/*font-weight:bold;*/
+}
+
+.hooray {
+	color:red;
+	font-weight: bold;
+	font-size: 3em;
+}
+
+.query-buttons {
+	margin: 0, auto;
+	text-align: center;
+	font-size: 1.2em;
+	font-style: italic;
+	margin-top: 1em;
+}
+
+.query-string {
+	/* A bit bigger than the other items, since it's not
+	 * going to be in a button */
+	font-weight: bold;
+	font-size: 1.4em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.nav-btn {
+	background-color: #59b329;
+	opacity: 1.0;
+	display: inline-block;
+	padding: 0.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	line-height: 1.4em;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	font-size: 1.1em;
+	border-bottom: 3px solid #328232;
+	border-radius: 5px;
+}
+
+.nav-btn.btn-red {
+	background-color: #ff8b7f;
+	border-bottom: 3px solid #BE2313;
+}
+
+.nav-btn.btn-red.disabled {
+	background-color: #ffcac5;
+	border-bottom: 2px solid #ffcac5;
+}
+
+.best_rank_btn {
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+	background-color: #0cc670;
+	padding: 0.1em;
+	font-size: 1.15em;
+	margin-top: -0.8em;
+	user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	border: 1.5px outset #0cc670;
+}
+
+.best_rank_btn:active {
+	border: 1.5px solid #0cc670;
+}
+
+.best_rank_btn span {
+	font-size: 0.7em;
+	font-family: serif;
+}
+
+.suggest_open {
+	display: none;
+	position: absolute;
+	background-color: white;
+	border: 1px solid #e9eaf9;
+	opacity: 0.9;
+	padding: 0.5em;
+	border-radius: 7px;
+}
+
+.serp-comparator {
+	margin-top: 1em;
+}
+
+.suggest_open:hover {
+	opacity: 1.0;
+}
+
+.relevant-count-label {
+	text-align: center;
+}
+
+.counter {
+	font-size: 1.9em;
+	background-color: transparent;
+}
+
+.right-col .counter,
+.left-col .counter {
+	/*width: 2em;*/
+	padding: 0.5em;
+	/*background-color: white;*/
+	/*border: 1px solid black;*/
+	margin-top: -5.5%;
+	text-align: center;
+}
+.right-col .counter {
+	float: left;
+	margin-left:-5.5%;
+}
+.left-col .counter {
+	float: right;
+	margin-right:-5.5%;
+}
+
+.counter.max {
+	color: red;
+	font-weight: bold;
+}

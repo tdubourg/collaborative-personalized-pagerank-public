@@ -1,0 +1,44 @@
+6391715
+
+<p>
+	<strong>Before querying for "tattoo art"</strong>, the current user has queried about the following topics:
+</p>
+
+<div class='inline-block-centerer'>
+	<ul class='toplist'>
+		<li>astrology</li>
+		<li>pictures &amp; music</li>
+		<li>tattoos</li>
+	</ul>
+</div>
+
+
+<p>
+
+    <strong>Now, this user is querying for "tattoo art"</strong>. He/she already has some history on related
+queries. His/her "profile" (based on 3-month history) <strong>has been matched with those of users</strong> thave have clicked
+on the following links, in the past, when querying for "tattoo art":
+
+</p>
+
+<div class='inline-block-centerer'>
+	<ul class='toplist queries'>
+		<li>en.wikipedia.org</li>
+		<li>www.joecapobianco.com</li>
+		<li>www.tattoojohnny.com</li>
+	</ul>
+</div>
+
+<p class='heavier'>
+	<span class='lookatme'>
+		This user is now you, imagine you are this user.
+	</span>
+
+	You have this profile, matched on a long previous history, to people that clicked those links. Which results in the
+	following rankings do you think would be relevant to you?
+
+    <br />Which ranking woulc you think you would prefer     overall, <strong>considering your context/your matched
+peers</strong>?
+
+</p>
+

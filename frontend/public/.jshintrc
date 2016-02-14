@@ -1,0 +1,8 @@
+{
+	"browser": true,
+	"devel": true,
+	"asi": true,
+	"unused": true,
+	"undef": true,
+	"jquery": true
+}

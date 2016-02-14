@@ -1,0 +1,62 @@
+%
+%	For setup that must follow metadata included in the document
+%
+
+\usepackage[
+	plainpages=false,
+	hidelinks,
+	pdfpagelabels,
+	pdftitle={\mytitle},
+	pagebackref,
+	pdfauthor={\myauthor},
+	pdfkeywords={\keywords}
+	]{hyperref}
+\usepackage{memhfixc}
+
+\usepackage{enumitem}
+\setlist{itemsep=0}
+% \setlist{nosep} % or \setlist{noitemsep} to leave space around whole list
+% \setlist{noitemsep}
+
+\input{mmd-title-cppr}
+
+% does not work if you use \mainmatter because it resets the counter blabla 
+% --> http://tex.stackexchange.com/questions/3327/turn-on-subsection-numbering-in-memoir#comment4815_3329
+% \setcounter{secnumdepth}{5}
+
+
+\begin{document}
+
+\VerbatimFootnotes
+
+\title{\mytitle}
+\author{\myauthor}
+
+\ifx\mydate\undefined
+\else
+	\date{\mydate}
+\fi
+
+\mainmatter
+\maketitle
+
+Advisors: Dipl. Inf. Wölfl (Universität Passau), Prof. Dr. Calabretto and Dr. Laporte (INSA Lyon)
+
+Reviewers: Prof. Dr. Brunie (INSA Lyon), Prof. Dr. Kosh and Prof. Dr. Granitzer (Universität Passau)
+
+\vspace{4\baselineskip}
+
+\includegraphics[height=60,width=150]{insa-logo.jpg}
+\hspace{50}
+\includegraphics[height=60,width=226]{passau-logo.png}
+
+% Copyright
+\setlength{\parindent}{0pt}
+
+\ifx\mycopyright\undefined
+\else
+	\textcopyright{} \mycopyright
+\fi
+
+\setlength{\parindent}{1em}
+

@@ -1,0 +1,47 @@
+5225582
+
+<p>
+	<strong>Before querying for "massage"</strong>, the current user has queried about the following topics:
+</p>
+
+<div class='inline-block-centerer'>
+	<ul class='toplist'>
+		<li>music</li>
+		<li>video games</li>
+		<li>porn</li>
+		<li>heroic fantasy</li>
+		<li>vacations</li>
+		<li>AOL issues</li>
+		<li>sex-related queries</li>
+	</ul>
+</div>
+
+
+<p>
+
+    <strong>Now, this user is querying for "massage"</strong>. He/she has no history on this query. His/her "profile" (based on
+3-month history) <strong>has been matched with those of users</strong> thave have clicked on the following links, in the past, when querying
+for "massage":
+
+</p>
+
+<div class='inline-block-centerer'>
+	<ul class='toplist queries'>
+		<li>www.massagetoday.com</li>
+		<li>www.massagetherapyfoundation.org</li>
+	</ul>
+</div>
+
+<p class='heavier'>
+	<span class='lookatme'>
+		This user is now you, imagine you are this user.
+	</span>
+
+	You have this profile, matched on a long previous history, to people that clicked those links. Which results in the
+	following rankings do you think would be relevant to you?
+
+    <br />Which ranking woulc you think you would prefer     overall, <strong>considering your context/your matched
+peers</strong>?
+
+</p>
+

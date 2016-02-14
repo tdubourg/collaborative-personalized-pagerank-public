@@ -1,0 +1,54 @@
+	<div class='context'>
+		<h3>Your context is the following:</h3>
+		{{{pageinfo_context}}}
+		<p class='recall-explanations'>
+			<em>For both of the two following rankings</em>, simply left-click on
+			<em>at most 5</em> results (a link+snippet block = a "result")
+			(of any of both rankings) <em>that you think is a relevant result</em>
+			 for the current query.
+			Then, please provide a overall opinion on which of the ranking you think
+			is globally the best.
+		</p>
+	</div>
+
+	<div class='query-buttons'>
+		<a class="nav-btn btn-red" href="{{nav.prev_href}}" id="nav-prev">&lt;&lt; Previous </a>
+		<span class='query-string'>
+			Current Query: "{{query_string}}"
+		</span>
+		<a href="{{nav.next_href}}" class="nav-btn" id="nav-next"> Confirm &amp; next &gt;&gt;</a>
+	</div>
+
+<!-- ########################################## -->
+
+	<div class="serp-comparator">
+		<div class="relevant-count-label">Relevant results</div>
+
+		<ul class="left-col serp {{serp_left_relevant}}" data-algorithm="{{serp_left_algorithm}}">
+		<div class="counter">0</div>
+		{{>best_overall_ranking_btn}}
+		{{#serp_left_results}}
+			<li class="result {{relevant}}" data-index="{{index}}">
+				<a href="{{url}}" class="title">{{title}}</a><br />
+				<a href="{{url}}" class="url-title">{{url_display}}</a>
+				<span class="snippet">
+					{{snippet}}
+				</span>
+			</li>
+		{{/serp_left_results}}
+		</ul>
+
+		<ul class="right-col serp {{serp_right_relevant}}" data-algorithm="{{serp_right_algorithm}}">
+		<div class="counter">0</div>
+		{{>best_overall_ranking_btn}}
+		{{#serp_right_results}}
+			<li class="result {{relevant}}" data-index="{{index}}">
+				<a href="{{url}}" class="title">{{title}}</a><br />
+				<a href="{{url}}" class="url-title">{{url_display}}</a>
+				<span class="snippet">
+					{{snippet}}
+				</span>
+			</li>
+		{{/serp_right_results}}
+		</ul>
+	</div>

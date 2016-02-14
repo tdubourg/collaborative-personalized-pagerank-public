@@ -1,0 +1,53 @@
+My PFE is a Master Thesis included in the Phd-Track INSA-Passau Double Diploma Program.
+
+The proposal of my master thesis is to reuse two existing techniques: Personalized PageRank and Collaborative Filtering in order to try to improve web search engines results by computing a usage-based personalized version of the PageRank score for every URLs.
+
+The "usage-based" is going to be done by analysing a dataset of user clicks logs on the AOL search engine.
+
+The basic schedule of the master thesis is:
+
+1) Litterature review
+2) Technique proposal
+3) Formula design & system design decisions - Iteration 1
+4) Formula design & system design decisions - Iteration 2
+5) Formula design & system design decisions - Iteration 3
+6) Formula design & system design decisions - Iteration 4
+6) Formula design & system design decisions - Iteration 5
+7) Evaluation environment development.
+8) Evaluation (by a set of users)
+9) Results analysis
+10) Conclusion
+
+In order to build a system that would allow evaluation of such a technique, we will have to develop the following tools (non-exhaustive):
+
+- A search engine logs analysers
+    + Able to extract users data (like clicks, queries...)
+    + Able to compute per-query metric (like number of clicks, click entropy...)
+- A program that queries the current AOL search engine to enrich the logs with additional information (in our case, mainly, we need the full URL while the log contains the domain only)
+- A program to select the queries, among the entire set of queries from the log, that we want to use for evaluation
+- A program to select the users, among the entire set of users from the log, that we want to use for evaluation, taking into account whether those users have some relationship with the selected queries.
+- Either a similarity function and a program that computes it for selected users and stores it
+- or a clustering that will cluster users in groups of similar users
+- A web crawler that generates a subgraph of the web on which we will run the Personalized PageRank (as running it on the entire web would be too heavy / too complicated / out of scope of the data we have).
+- Algorithm that compute URLs "personalization score" for groups of users
+- A program that computes the Personalized PageRank score out of the "personalization scores" of URLs, for the current user
+- A search engine index that allows to query the web graph that we crawled and store, and provide results (basically, a simplified Google) (using ElasticSearch)
+- An web UI that allows selected users to run the users study to evaluate the quality of the re-ranking compared to the original ranking
+
+Non-exhaustive list of technologies used in the project so far:
+- Python
+- Scrapy framework
+- Graph-Tool C++ library for Python
+- BeautifoulSoup, Chardet for Python
+- ElasticSearch API client for Python
+- ElasticSearch
+- NodeJS
+- Express.js framework
+- Mustache template engine
+- ElasticSearch API client for NodeJS
+- (to be decided) a DBMS, PostgreSQL or MongoDB are the most likely to be picked up
+- Google Cloud Compute Engine (to run PageRank on 24 cores and/or run ElasticSearch in-RAM (2 cores))
+- LibreOffice Spreadsheets :) 
+- SublimeText awesomeness
+- tmux awesomeness
+- Vim not-so-awesomeness

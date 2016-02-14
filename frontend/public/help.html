@@ -1,0 +1,111 @@
+<h1 id="cppr:brcollaborativelypersonalizedpagerankuserstudy">CPPR: <br />Collaborative(ly) Personalized PageRank User Study</h1>
+
+<h2 id="tldr">TL; DR</h2>
+
+<ul>
+<li><p>This user study is for you to select &#8220;top 5 most relevant&#8221; (per column/ranking list) results, <strong>in accordance to a
+given context</strong> among two presented rankings and also <strong>which ranking is the best, overall</strong> (left/right).</p></li>
+<li><p>You can select between 0 and 5 results (<strong>per column</strong>!). You do not necessarily need to select 5. If you want to
+select more than 5, keep the best (in your opinion) 5 ones.</p></li>
+<li><p><strong>There are only 5 queries, so do not hesitate to clicks on links (blue titles / green urls) and make sure about what you
+think is best.</strong></p></li>
+<li><p><strong>A &#8220;Help&#8221; button will be on the left</strong>, to bring back this modal window in case you need.</p></li>
+<li><p><strong>Left/Right rankings are randomly swapped</strong> at every page reload, so that you cannot be biased by a left/right
+preference. Do not make assumptions about wheter the left or right side is better, it is going to change.</p></li>
+<li><p><strong>This is not Google</strong>: Results might seem a little bit &#8220;crap&#8221; sometimes in comparison with Google. Those queries were
+matched against a focused/small crawl of the WWW and this is not Google, the results are as good as the web repository
+can be.</p></li>
+</ul>
+
+<h2 id="tldrpicturesvisualtutorial">TL; DR; Pictures! (Visual Tutorial)</h2>
+
+<p>In a nutshell, here&#8217;s the GUI and what you have to do on it:
+<img src="./images/tutorial.png" alt="" id="visututo" style="height:724;width:800;" /></p>
+
+<p><a style='display:block;text-align:center; font-size: 2em;' href='#top' onclick='$.colorbox.close();'>
+&gt;&gt; ENOUGH READING, LET&#8217;S GO! &lt;&lt;
+</a></p>
+
+<h2 id="normalversion">Normal Version</h2>
+
+<p>Welcome to the CPPR User Study.</p>
+
+<p>The goal of this study is to provide a user-based relevance measurement to
+a pre-selected set of rankings.</p>
+
+<p>Based on the results of the user study, I will be able to make conclusion on
+the performance of the algorithm that I have been developing during my Master
+Thesis: Collaborative(ly) Personalized PageRank.</p>
+
+<h2 id="howtheuserstudyworks">How The User Study Works</h2>
+
+<p>During the user study, every &#8220;user&#8221; will be presented with the same sequence
+of rankings. These rankings have a <em>context</em>. This context is basically clicks/navigation
+of users similar to the &#8220;current user&#8221; (similar = similar user profile). These are used
+in an attempt to re-rank the SERP (Search Engine Result Page) results to be more tailored
+to the &#8220;current user&#8221; profile, using information from similar users.</p>
+
+<p><strong>Your mission, if you accept it, is to imagine you are this user</strong>, the context is often quite
+short: Only a couple of links are taken into account (due to several layers of intersections),
+simply try to imagine, if you had clicked on such links, what would you be looking for.</p>
+
+<p>Based on this, you can then <strong>select at most 5 results (per column!)</strong> that are <em>relevant</em>. There can be less
+than 5, but not more than 5 (the UI won&#8217;t allow more than 5 selected results).</p>
+
+<p>If you really think none of the results are relevant, you can select none of them, a confirmation
+will however be asked, to be sure you did not just forget to select them.</p>
+
+<p>Amongst those two rankings, one of them is using the &#8220;standard&#8221; PageRank algorithm.
+The other one has been computed using personalized weights extracted based on the context
+of users similars to him/her.</p>
+
+<p>You will not know which ranking is personalized or not (although you might guess).
+<strong>And the rankings will randomly be swapped sides for every query that you see</strong>. So, please
+<strong>do not make any assumptions on whether one side is better than the other one</strong> because they
+<em>are randomly swapped</em>.</p>
+
+<h2 id="whatisarelevancyjudgment">What Is A <em>Relevancy Judgment</em></h2>
+
+<p>A relevancy judgment is just: You consider that this result (a link/snippet) is
+relevant to the query that is being presented and with the current context (the context is important).</p>
+
+<h2 id="howdoyouprovideyourjudgments">How Do You Provide Your Judgments?</h2>
+
+<p>You simply have to left-click a result to mark it as relevant. It will turn green.
+If you misclicked, simply click again on the same result to toggle its relevant/irrelevant state.</p>
+
+<p><strong>You can select between 0 and 5 relevant results</strong> (per column!). If more than 5 results are relevant in your opinion,
+select the 5 most relevant ones for left/right columns. If less than 5 results are relevant in your opinion, just select
+the ones you think are relevant and validate as is.</p>
+
+<h2 id="globalopiniononbestrankingoverall">Global Opinion On Best Ranking &#8220;Overall&#8221;</h2>
+
+<p>The last thing that will be asked to you is to provide, for every query/context, your overall
+preference towards one ranking or the other.</p>
+
+<p><strong>This time, you have to choose, you cannot select both</strong>. Simply select the one
+that in your opinion globally answers the best the query / context. Rankings should never
+be exactly similar so you should not have to make non-sense choices.</p>
+
+<p><a style='display:block;text-align:center; font-size: 3em;' href='#top' onclick='$.colorbox.close();'>
+OK LET&#8217;S GO!
+</a></p>
+
+<h2 id="wanttoknowmoreaboutcppr">Want To Know More About Cppr?</h2>
+
+<p>This help page is a little bit too short to explain in details. If you feel you need more details to do the user query,
+then please contact me (see at the bottom) but that should not be needed.</p>
+
+<h2 id="wanttoknowevenmoreaboutcppr">Want To Know Even More About Cppr?</h2>
+
+<p>Just shoot me <a id="shoot_an_email" href="mailto:__myemail__">an email</a> and I will be happy sending my Master
+Thesis to you in its current state or when it&#8217;s finalized :) Be warned: That&#8217;s quite a bunch
+of pages.</p>
+
+<script type="text/javascript">
+var a = "theod"
+var b = ".insa"
+var c = "@"
+var mto = ["m", "a", "i", "l", "t", "o", ":"]
+document.getElementById("shoot_an_email").href = mto.join("") + a + b + [c, "gm", "ail"].join("") + ("." + "com")
+</script>

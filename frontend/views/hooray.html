@@ -1,0 +1,30 @@
+  <!-- <div class="gallery autoplay items-4" style='width: 500px; height:365px;background:transparent;text-align:center;'> -->
+    <div class="carousel" style="text-align:center">
+      <br />
+      <br />
+      <img src="/images/hooray_cat.jpg" height=500 width=600>
+    </div>
+  <!-- </div> -->
+  <script type="text/javascript">
+    var iter = 0
+    var images = ['/images/hooray_cat.jpg', '/images/hooray_girl.jpg', '/images/hooray_cat_air.jpg', '/images/cat_pompom.jpg', '/images/pony_hooray.png']
+    $(document).ready(function () {
+      setInterval(function () {
+        iter = (iter + 1) % images.length
+        var i = $('.carousel img')
+        i.animate(
+          {opacity: 0.0},
+          500,
+          function() {
+            $('.carousel img').attr('src', images[iter])
+            setTimeout(function () {
+              $('.carousel img').animate(
+                {opacity: 1.0},
+                350
+              );
+            }, 100)
+          }
+        )
+      }, 2500)
+    })
+  </script>
